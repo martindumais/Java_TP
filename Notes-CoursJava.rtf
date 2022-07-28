@@ -53,9 +53,9 @@
 
 \f0\b \cf2 - BufferedReader() ->  \cf3 monothread (plus lent) : \cf2 lit les donn\'e9es entr\'e9es par l\'92utilisateur comme un String => java.io.BufferedReader\
 
-\f1\b0 \cf4 	- .read() -> lit un caract\'e8re\
-	- .readline -> lit une chaine de caract\'e8res\
-	- .skip -> saute des caract\'e8res\
+\f1\b0 \cf4 	- .read() -> lit le premier caract\'e8re et transmet son code ASCII => attend un Char\
+	- .readLine()-> lit une chaine de caract\'e8res et le transmet=> attend un String\
+	- .skip() -> saute des caract\'e8res => attend un Long\
 
 \f0\b \cf2 \
 - scanner() -> \cf3 multithreads (plus rapide) : \cf2 lit et analyse (parsing) les donn\'e9es de l\'92utilisateur pour d\'e9terminer si son type correspond \'e0 celui attendu =>java.util.Scanner\
